@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+  url('../fonts/rubik-v21-latin_cyrillic-regular.woff2') format('woff2'),
+  url('../fonts/rubik-v21-latin_cyrillic-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+  url('../fonts/rubik-v21-latin_cyrillic-500.woff2') format('woff2'),
+  url('../fonts/rubik-v21-latin_cyrillic-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+  url('../fonts/noto-sans-v27-latin_cyrillic-regular.woff2') format('woff2'),
+  url('../fonts/noto-sans-v27-latin_cyrillic-regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+  url('../fonts/noto-sans-v27-latin_cyrillic-500.woff2') format('woff2'),
+  url('../fonts/noto-sans-v27-latin_cyrillic-500.woff') format('woff');
+}
+
+
+.search__button{
+  font-family: 'Rubik';
+  background: #F8FAFD;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.soon{
+  margin-left: 220px;
+} 
+
+
+.result__text{
+  font-family: 'Rubik';
+  font-weight: 500;
+}
+
+.newest{
+  display: flex;
+  align-items: center;
+  width: 165px;
+  height: 34px;  
+  background: #A6B0C3;
+  border-radius: 4px;
+  margin-left: 100px;
+}
+
+.newest__text{
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-left: 5px;
+}
+
+.bookmark__heading{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.bookmark__text{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;  
+  color: #000000;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  width: 218px;
+}
+
+/* .bookmarks__wrapper{
+  position: fixed;
+} */
+
+.bookmarks{
+  margin-top: 25px;
+}
+
+.item__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 218px;
+  height: 72px;
+  background: #F8FAFD;
+  border-radius: 4px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.item__heading{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+
+.item__text{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+
+.card__list{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background: #E5E5E5;
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.card__list1{
+  background: #e5e5e56f;
+}
+
+.card__item{
+  padding: 15px;
+}
+
+.card__img{
+  padding: 17px;
+  background: #F8FAFD;
+  border-radius: 5px;
+}
+
+.card__heading{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+.card__text{
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+  margin-top: 2px;
+}
+
+.card__year{
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #757881;
+}
+
+.card__bookmark{
+  width: 95px;
+  height: 37px;
+  background: #FFD80D;
+  border-radius: 4px;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+.card__info{
+  width: 95px;
+  height: 37px;
+  background: rgba(13, 117, 255, 0.05);
+  border-radius: 4px;
+  padding-left: 14px;
+  cursor: pointer;
+}
+
+.bookmark__cardtext{
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.info__cardtext{
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #0D75FF;
+  text-decoration: none;
+}
+
+.read__card{
+  width: 217px;
+  height: 37px;
+  background: #75828A;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding-left: 90px;
+  padding-top: 11px;
+  cursor: pointer;
+}
+
+.read__cardtext{
+  font-family: 'Rubik';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.darkmode{
+  background-color: rgba(0, 0, 0, 0.739);
+  color: white;
+}
+
+.authors__name{
+  text-decoration: none;
+  margin-left: 5px;
+  background-color: #a4a9c3c5;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.published__name{
+  text-decoration: none;
+  margin-left: 5px;
+  background-color: #a4a9c3c5;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.publishers__name{
+  text-decoration: none;
+  margin-left: 5px;
+  background-color: #a4a9c3c5;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.categories__name{
+  text-decoration: none;
+  margin-left: 5px;
+  background-color: #a4a9c3c5;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.pages__name{
+  text-decoration: none;
+  margin-left: 5px;
+  background-color: #a4a9c3c5;
+  padding: 7px;
+  border-radius: 20px;
+}
+
+.read__button{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.modal__info{
+  margin-left: 660px;
+}

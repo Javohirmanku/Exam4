@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>BookShelter</title>
+</head>
+<body class="book__body">
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-3">
+                <img src="./images/logo.jpg" alt="rasm">
+            </div>
+            
+            <form class="col-6 render__form">
+                <input class="form-control rounded-pill search__button" placeholder="Search books" type="text">
+            </form>
+            
+            <div class="col-3 dark__mode">
+                <img class="soon" src="./images/quyosh.svg" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-6">
+                <p class="result__text mt-3">Showing <span class="search__result">0</span> Result(s)</p>
+            </div>
+            <div class="col-3 newest mt-2 ">
+                <img src="./images/calendar.svg" alt="rasm">
+                <p class="newest__text">Order by newest</p>
+            </div>
+        </div>
+        <hr class="m-0 mt-2">
+        
+        <div class="d-flex">
+            <div class="w-25 bookmarks__wrapper">
+                <div class="bookmarks">
+                    <h3 class="bookmark__heading">Bookmarks</h3>
+                    <p class="bookmark__text">If you don't like to read, you haven't found the right book</p>
+                </div>
+                <div class="bookmark__list">
+                    
+                </div>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-3 g-4 card__list w-75">
+                
+            </div>
+        </div>
+    </div>  
+    
+    
+    <!-- Modal -->
+    <div class="modal fade modal__wrapper" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            
+        </div>
+    </div>
+    
+    <template class="modal__temp">
+        <div class="modal-content  modal__info w-50 text-center">
+            <div class="modal-header">
+                <h5 class="modal-title modal__heading" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal__img mt-4 mb-3">
+                <img src="./images/birinchi.jpg" class="img__modal" alt="...">
+            </div>
+            <div class="modal-body">
+                <p class="modal__text mb-3"></p>
+                <h6 class="authors mb-4 text-start"> Author: <a class="authors__name"></a></h6>
+                <h6 class="published mb-4 text-start"> Published: <a class="published__name"></a></h6>
+                <h6 class="publishers mb-4 text-start"> Publishers: <a class="publishers__name"></a></h6>
+                <h6 class="categories mb-4 text-start"> Publishers: <a class="categories__name"></a></h6>
+                <!-- <h6 class="pages mb-4 text-start"> Pages Count: <a class="pages__name"></a></h6> -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary read__button" data-bs-dismiss="modal">Read</button>
+            </div>
+        </div>
+    </template>
+    
+    <template class="card__template">
+        <div class="col">
+            <div class="card h-100 card__item">
+                <img src="./images/birinchi.jpg" class="card-img-top card__img" alt="...">
+                <div class="card-body">
+                    <div class="ms-2 card__exam">
+                        <h2 class="card__heading">Python</h2>
+                        <p class="card__text">David M. Beazley</p>
+                        <p class="card__year">2009</p>
+                    </div>
+                    <div class="row buttons__list">
+                        <a class="bookmark__cardtext col-6 card__bookmark" href="#">Bookmark</a>
+                        <button type="button" class="btn btn-primary info__cardtext col-6 card__info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            More info
+                        </button>
+                        <a target="_blank" class="read__cardtext read__card" href="">Read</a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </template>
+    
+    <template class="list__temp">
+        <div class="item__wrapper">
+            <div class="ms-2">
+                <h2 class="item__heading">Python</h2>
+                <p class="item__text">David M. Beazley</p>
+            </div>
+            <div class="me-3 mb-3">
+                <img class="remove__btn" src="./images/bookopen.svg" alt="">
+                <img src="./images/deletex.svg" alt="">
+            </div>
+        </div>
+    </template>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/movies.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
+
+
